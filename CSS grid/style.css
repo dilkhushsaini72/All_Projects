@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  font-weight: 800;
+  text-shadow: -5px 5px 0px #dadada;
+}
+
+body {
+  padding: 0px 20px;
+  height: 100%;
+}
+
+.box {
+  font-size: 3rem;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0px 20px; */
+  border-radius: 8px;
+}
+
+.container {
+  min-height: 40vh;
+  padding: 4px;
+  /* background-color: aqua; */
+  display: grid;
+  gap: 1.3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.box1 {
+  background-color: brown;
+}
+
+.box2 {
+  background-color: burlywood;
+}
+
+.box3 {
+  background-color: blue;
+}
+
+.box4 {
+  background-color: chartreuse;
+}
+
+.box5 {
+  background-color: yellow;
+}
+
+.box6 {
+  background-color: burlywood;
+}
+
+.box7 {
+  background-color: blue;
+}
+
+.box8 {
+  background-color: chartreuse;
+}
+
+.box9 {
+  background-color: rgb(24, 171, 216);
+}
+
+.box10 {
+  background-color: yellow;
+}
+
+@media (min-width: 720px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box {
+    min-height: 200px;
+  }
+
+  .box1,
+  .box5 {
+    grid-column-start: span 2;
+  }
+
+  .box3 {
+    grid-row-start: span 2;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* .container {
+  grid-template-columns: none;
+  grid-template-columns: none;
+  column-gap: auto;
+  row-gap: normal;
+}
+
+.children {
+  grid-column-start: auto;
+  grid-column-end: auto;
+  grid-row-start: auto;
+  grid-row-end: auto;
+}
+
+.container {
+  grid-template-areas: none;
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
+  grid-auto-flow: row;
+} */
